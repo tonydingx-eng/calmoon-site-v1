@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Contact | Calmoon</title>
+  <meta
+    name="description"
+    content="Contact Calmoon to share feedback, ask questions, or discuss retail and collaboration opportunities."
+  />
+  <link rel="icon" type="image/png" href="images/logo.png" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Instrument+Sans:wght@400;500;600;700&family=Playfair+Display:wght@600;700&display=swap"
+    rel="stylesheet"
+  />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="container nav-wrap">
+      <a href="index.html" class="brand-mark" aria-label="Calmoon home">
+        <img src="images/logo.png" alt="Calmoon logo" class="brand-icon" />
+        <span class="logo-text">Calmoon</span>
+      </a>
+      <button
+        class="menu-toggle"
+        id="menuToggle"
+        type="button"
+        aria-label="Open menu"
+        aria-expanded="false"
+        aria-controls="mainNav"
+      >
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+      <nav class="nav" id="mainNav" aria-label="Main navigation">
+        <a href="index.html">Home</a>
+        <a href="brand.html">Our Brand</a>
+        <a href="product.html">Diaper Cream</a>
+        <a href="story.html">Our Story</a>
+        <a href="contact.html" class="current">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="page-hero">
+      <div class="container">
+        <div class="page-hero-shell">
+          <p class="section-label">Contact</p>
+          <h1>Send feedback, questions, or collaboration inquiries.</h1>
+          <p class="page-intro">
+            The form below now opens an email draft addressed to
+            947853914@qq.com so visitors can send you feedback directly.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container contact-layout">
+        <div class="contact-card">
+          <p class="mini-label">Direct Contact</p>
+          <h2>Ways to reach Calmoon</h2>
+          <div class="contact-list">
+            <p><strong>Email</strong><br /><a href="mailto:947853914@qq.com">947853914@qq.com</a></p>
+            <p><strong>Instagram</strong><br />@calmoonbaby</p>
+            <p><strong>Founded by</strong><br />Tony & Carol</p>
+          </div>
+          <div class="inline-actions">
+            <a href="mailto:947853914@qq.com" class="btn btn-secondary">Email Directly</a>
+          </div>
+        </div>
+
+        <form
+          class="contact-form"
+          id="contactForm"
+          action="mailto:947853914@qq.com"
+          method="post"
+          enctype="text/plain"
+        >
+          <label>
+            Name
+            <input type="text" name="name" placeholder="Your name" required />
+          </label>
+          <label>
+            Email
+            <input type="email" name="email" placeholder="Your email" required />
+          </label>
+          <label>
+            Subject
+            <input type="text" name="subject" placeholder="Feedback subject" />
+          </label>
+          <label>
+            Message
+            <textarea
+              name="message"
+              rows="6"
+              placeholder="Write your feedback here"
+              required
+            ></textarea>
+          </label>
+          <button type="submit" class="btn btn-primary">Send Feedback</button>
+          <p class="form-note">
+            When submitted, this form opens the visitor's email app with your
+            address prefilled.
+          </p>
+          <p class="form-status" id="formStatus" aria-live="polite"></p>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-grid">
+      <div>
+        <h3>Calmoon</h3>
+        <p>Gentle baby care for modern families.</p>
+        <p>Founded by Tony & Carol</p>
+      </div>
+      <div>
+        <h4>Pages</h4>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="brand.html">Our Brand</a></li>
+          <li><a href="product.html">Diaper Cream</a></li>
+          <li><a href="story.html">Our Story</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Contact</h4>
+        <p><a href="mailto:947853914@qq.com">947853914@qq.com</a></p>
+        <p>@calmoonbaby</p>
+      </div>
+    </div>
+    <div class="container footer-bottom">
+      <p>&copy; 2026 Calmoon. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
